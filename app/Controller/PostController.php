@@ -33,14 +33,14 @@ class PostController
 		try
 		{
 			Comentario::inserir($_POST);
-			header('Location: http://localhost/gabriel/MVC%20+%20PHP/?pagina=post&id='. $_POST['id'] .'"');
+			header('Location: http://localhost/gabriel/MVC-PHP/?pagina=post&id='. $_POST['id'] .'"');
 		}
 		catch (Exception $e)
 		{
 			echo
 			'<script>
 				alert("' . $e->getMessage() . '");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=post&id='. $_POST['id'] .'"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=post&id='. $_POST['id'] .'"
 			</script>';
 		}
 	}

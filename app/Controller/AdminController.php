@@ -37,7 +37,7 @@ class AdminController
 			echo
 			'<script>
 				alert("Publicação inserida com sucesso.");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=index"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=index"
 			</script>';
 		}
 		catch(Exception $e)
@@ -45,7 +45,7 @@ class AdminController
 			echo
 			'<script>
 				alert("' . $e->getMessage() . '");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=create"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=create"
 			</script>';
 		}
 	}
@@ -77,7 +77,7 @@ class AdminController
 			echo
 			'<script>
 				alert("Publicação alterada com sucesso.");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=index"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=index"
 			</script>';
 		}
 		catch (Exception $e)
@@ -85,7 +85,7 @@ class AdminController
 			echo
 			'<script>
 				alert("' . $e->getMessage() . '");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=change&id=' . $_POST['id'] . '"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=change&id=' . $_POST['id'] . '"
 			</script>';
 		}
 
@@ -99,7 +99,7 @@ class AdminController
 			echo
 			'<script>
 				alert("Publicação deletada com sucesso.");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=index"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=index"
 			</script>';
 		}
 		catch (Exception $e)
@@ -107,7 +107,7 @@ class AdminController
 			echo
 			'<script>
 				alert("' . $e->getMessage() . '");
-				location.href="http://localhost/gabriel/MVC%20+%20PHP/?pagina=admin&metodo=index"
+				location.href="http://localhost/gabriel/MVC-PHP/?pagina=admin&metodo=index"
 			</script>';
 		}
 	}
