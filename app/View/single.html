@@ -1,0 +1,30 @@
+<section>
+		<article>
+			<header>
+				<h2>{{titulo}}</h2>
+			</header>
+			<p>{{conteudo}}</p>
+			<br><hr><br>
+
+			<form method="POST" action="http://localhost/gabriel/MVC%20+%20PHP/?pagina=post&metodo=addComent">
+
+				<span>Nome:</span><br>
+				<input type="text" name="nome"><br><br>
+				<span>Comentario</span><br>
+				<textarea name="msg" cols="30" rows="10"></textarea><br>
+				<input type="hidden" name="id" value="{{id}}">
+				<input type="submit" name="" value="Enviar">
+
+			</form><br><br>
+
+
+			{% if comentarios == false %}
+				<p>Nenhum comentário encontrado para essa postagem</p>
+			{%else%}
+				{% for comentario in comentarios %}
+					<h3>{{comentario.nome}}</h3>
+					<p>{{comentario.mensagem}}</p>
+				{% endfor%}
+			{% endif %}
+		</article>
+</section>
