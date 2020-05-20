@@ -1,6 +1,6 @@
 Step by Step
 
-    -> 1: 
+    -> 1: asdf
         criar arquivo da estrutura.html com os elementos que serão utilizados em todas as paginas
     -> 2:
         definir um novo arquivo com conteudo dinamico da pagina: home.html, e adicionar a tag 
